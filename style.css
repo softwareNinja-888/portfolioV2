@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf") format('truetype'),
+         url('/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto/Roboto-Black.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url("/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format('truetype'),
+         url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: #0a192f;
 }
@@ -7,25 +29,17 @@ body{
 }
 .numLinks{
     color: #64ffda;
+    font-family: 'Inter';
 }
 .link{
     color: white;
     text-decoration: underline #0a192f ;
     transition: text-decoration .3s ease-in-out;
+    font-family: 'Inter';
+
 }
 .link:hover{
     text-decoration: underline #64ffda ;
-}
-.cv{
-    border: 1px solid white;
-    border-radius: 6px;
-    padding: 8px;
-    color: #64ffda;
-
-    min-width: 80px;
-}
-.cv:hover{
-    background-color: #081c38;
 }
 
 .head{
@@ -37,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     gap: 30px;
+    
 
 }
 
@@ -54,4 +69,45 @@ body{
         justify-content: center;
     }
 
+}
+
+/* INTRODUCTION */
+
+.intro {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 55%;
+    margin: auto;
+}
+
+.hello{
+    color: #64ffda;
+    font-family: 'Inter';
+}
+.fname{
+    color: white;
+    font-family: "Roboto";
+
+}
+.fsubname,.fdescription{
+    color: #8892b0;
+    font-family: "Mont";
+}
+.fdescription{
+    max-width: 55%;
+}
+.introBtn{
+    border: 1px solid #64ffda;
+    font-family: 'Inter';
+    color: #64ffda;
+    padding: 15px;
+    max-width:25%;
+
+    transition: .3s ease-in-out;
+}
+.introBtn:hover{
+    background-color: #64ffda;
+    color: #0a192f;
 }
