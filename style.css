@@ -1,0 +1,36 @@
+body{
+    background-color: #0a192f;
+}
+
+.icon {
+    cursor: pointer;
+}
+.numLinks{
+    color: #64ffda;
+}
+.link{
+    color: white;
+}
+.cv{
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px;
+    color: #64ffda;
+
+    min-width: 80px;
+}
+.cv:hover{
+    background-color: #081c38;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.linksCon{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
