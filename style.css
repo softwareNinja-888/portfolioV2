@@ -80,8 +80,21 @@ body{
     gap: 30px;
     max-width: 55%;
     margin: auto;
-}
+    margin-top: 160px;
+    margin-right: 200px;
 
+    animation: fade-in 2s ease-in-out;
+}
+@keyframes fade-in {
+    0%{
+        opacity: .1;
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 .hello{
     color: #64ffda;
     font-family: 'Inter';
