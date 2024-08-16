@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -18,7 +18,14 @@
                     <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="50" fill="#64ffda" text-anchor="middle" dominant-baseline="middle"> B </text>
                 </svg>
             </div>
-            <div class="links">
+            <nav class="links">
+                <!-- IMPLLEMENT HAMBURGER MENU: -->
+                <!-- <div class="menuCon">
+                    <svg class="menu off md:on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" fill="#FFFFFF"/>
+                    </svg>
+                    
+                </div> -->
                 <ul class="linksCon">
                     <li><a href="" class="link text-xs"><span class="numLinks">#1.</span> About</a></li>
                     <li><a href="" class="link text-xs"><span class="numLinks">#2.</span> Experince</a></li>
@@ -26,7 +33,7 @@
                     <li><a href="" class="link text-xs"><span class="numLinks">#4.</span> Contact</a></li>
                     <button type="button" class="cv text-xs">CV</button>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
     <main></main>

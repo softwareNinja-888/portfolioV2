@@ -10,6 +10,11 @@ body{
 }
 .link{
     color: white;
+    text-decoration: underline #0a192f ;
+    transition: text-decoration .3s ease-in-out;
+}
+.link:hover{
+    text-decoration: underline #64ffda ;
 }
 .cv{
     border: 1px solid white;
@@ -32,5 +37,21 @@ body{
     display: flex;
     align-items: center;
     gap: 30px;
+
+}
+
+
+/* MOBILE SCREEN */
+@media (max-width:768px) {
+    .head{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .icon{
+        align-self: center;
+    }
+    .linksCon{
+        justify-content: center;
+    }
 
 }
